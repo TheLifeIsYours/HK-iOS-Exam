@@ -19,6 +19,9 @@
 		BB8168A6272C682F00582206 /* folioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8168A5272C682F00582206 /* folioUITestsLaunchTests.swift */; };
 		BB8380FB272CC149003A03CD /* Lato in Resources */ = {isa = PBXBuildFile; fileRef = BB8380FA272CC148003A03CD /* Lato */; };
 		BB8380FD272CC9FB003A03CD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8380FC272CC9FB003A03CD /* Person.swift */; };
+		BB8380FF2730C6A3003A03CD /* FolioListCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8380FE2730C6A3003A03CD /* FolioListCard.swift */; };
+		BB8381012730C725003A03CD /* FolioDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8381002730C725003A03CD /* FolioDetailsView.swift */; };
+		BB8381032730C7D4003A03CD /* FolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8381022730C7D4003A03CD /* FolioView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		BB8168A5272C682F00582206 /* folioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = folioUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BB8380FA272CC148003A03CD /* Lato */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Lato; sourceTree = "<group>"; };
 		BB8380FC272CC9FB003A03CD /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		BB8380FE2730C6A3003A03CD /* FolioListCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioListCard.swift; sourceTree = "<group>"; };
+		BB8381002730C725003A03CD /* FolioDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioDetailsView.swift; sourceTree = "<group>"; };
+		BB8381022730C7D4003A03CD /* FolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioView.swift; sourceTree = "<group>"; };
 		C7962DA789D4EC958ADC2022 /* Pods_folio_folioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_folio_folioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3DA562B7D141371B20CDAFC /* Pods-folio-folioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-folio-folioUITests.release.xcconfig"; path = "Target Support Files/Pods-folio-folioUITests/Pods-folio-folioUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D6E6CCB5AB7DF6D7D85E0D64 /* Pods-folioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-folioTests.debug.xcconfig"; path = "Target Support Files/Pods-folioTests/Pods-folioTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +136,9 @@
 				BB8168B2272C90F100582206 /* API */,
 				BB816888272C682D00582206 /* folioApp.swift */,
 				BB81688A272C682D00582206 /* ContentView.swift */,
+				BB8381022730C7D4003A03CD /* FolioView.swift */,
+				BB8381002730C725003A03CD /* FolioDetailsView.swift */,
+				BB8380FE2730C6A3003A03CD /* FolioListCard.swift */,
 				BB81688C272C682E00582206 /* Assets.xcassets */,
 				BB81688E272C682E00582206 /* Preview Content */,
 			);
@@ -440,7 +449,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB8380FD272CC9FB003A03CD /* Person.swift in Sources */,
+				BB8380FF2730C6A3003A03CD /* FolioListCard.swift in Sources */,
 				BB81688B272C682D00582206 /* ContentView.swift in Sources */,
+				BB8381012730C725003A03CD /* FolioDetailsView.swift in Sources */,
+				BB8381032730C7D4003A03CD /* FolioView.swift in Sources */,
 				BB816889272C682D00582206 /* folioApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
