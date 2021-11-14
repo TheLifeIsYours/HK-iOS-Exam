@@ -18,12 +18,21 @@ class folioTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testBirthdayWeek() throws {
+        let api = PeopleAPI()
+        
+        if let people = api.data?.results {
+            var birthday = people[0].dateOfBirth?.date
+            
+            XCTAssertFalse(birthday!.isInThisWeek)
+            
+            birthday = .now
+            
+            XCTAssertTrue(birthday!.isInThisWeek)
+        }
     }
 
-    func testPerformanceExample() throws {
+    func testPerformance() throws {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.

@@ -11,7 +11,7 @@ import SwiftUI
 struct folioApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environment(\.managedObjectContext, PersistenceProvider.default.context)
         }
     }
 }

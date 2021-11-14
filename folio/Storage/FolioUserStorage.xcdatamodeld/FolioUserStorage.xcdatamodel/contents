@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="21A344" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AppStorage" representedClassName=".AppStorage" syncable="YES">
+        <attribute name="seed" optional="YES" attributeType="String" defaultValueString="ios"/>
+    </entity>
+    <entity name="Folio" representedClassName=".Folio" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" customClassName="FolioLocation"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" customClassName="FolioDOB"/>
+        <attribute name="edited" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String" customClassName="FolioName"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <attribute name="pictureLarge" optional="YES" attributeType="String" customClassName="FolioPicture"/>
+        <attribute name="pictureMedium" optional="YES" attributeType="String"/>
+        <attribute name="pictureThumbnail" optional="YES" attributeType="String"/>
+        <attribute name="removed" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="seed" optional="YES" attributeType="String"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Folio" positionX="-63" positionY="-18" width="128" height="313"/>
+        <element name="AppStorage" positionX="-45" positionY="135" width="128" height="44"/>
+    </elements>
+</model>

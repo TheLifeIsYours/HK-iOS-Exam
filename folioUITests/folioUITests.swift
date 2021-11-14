@@ -27,6 +27,8 @@ class folioUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
+        XCUIApplication().scrollViews.otherElements.containing(.staticText, identifier:"Saved Folios").children(matching: .button).matching(identifier: "Forward").element(boundBy: 1).tap()
+
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

@@ -12,6 +12,7 @@ import AlamofireObjectMapper
 import SwiftyJSON
 
 import ObjectMapper
+import CoreData
 
 
 struct People: Mappable {
@@ -96,16 +97,25 @@ struct Location: Mappable {
 }
 
     struct Coordinates: Mappable {
-        var lattitude: Float?
-        var longitude: Float?
+        var longitude: Double?
+        var latitude: Double?
         
         init?(map: Map) {
             
         }
         
         mutating func mapping(map: Map) {
-            lattitude <- map["lattitude"]
+            var latitude: String?
+            var  longitude: String?
+            latitude <- map["latitude"]
             longitude <- map["longitude"]
+
+            if let latitude = latitude {
+                self.latitude = Double(latitude)
+            }
+            if let longitude = longitude {
+                self.longitude = Double(longitude)
+            }
         }
     }
 
@@ -187,8 +197,22 @@ class PeopleAPI: ObservableObject {
     
     @Published var data: People?
     
+    var seed = AppStorage.getSeed()
+    
     init() {
-        AF.request("https://randomuser.me/api/?seed=ios&results=100&nat=gb",
+        fetch()
+    }
+    
+    func refresh() async {
+        fetch()
+    }
+    
+    func fetch() {
+        print(self.seed)
+        
+        let url = "https://randomuser.me/api/?seed=\(self.seed)&results=100&nat=no"
+        
+        AF.request(url,
            method: .get,
            parameters: nil,
            encoding: URLEncoding.default,
@@ -196,9 +220,8 @@ class PeopleAPI: ObservableObject {
         ).validate().responseJSON { response in
             switch response.result {
                 case .success(let value):
-                        let json = JSON(value)
-                        self.data = Mapper<People>().map(JSONObject: value)
-                        print(json)
+                    self.data = Mapper<People>().map(JSONObject: value)
+                
                 case .failure(let error):
                     print(error)
             }

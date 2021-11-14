@@ -10,6 +10,19 @@
 		3F28A745225E0F75A2DC70CA /* Pods_folioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28915F53D279375EA34F39F5 /* Pods_folioTests.framework */; };
 		7964A49CB1F4ACF4E707710E /* Pods_folio_folioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7962DA789D4EC958ADC2022 /* Pods_folio_folioUITests.framework */; };
 		85A60A5473E690BA26A55887 /* Pods_folio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB2474E04D0D840DDED8034 /* Pods_folio.framework */; };
+		BB61A9802731E17D00A44D84 /* PersonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61A97F2731E17D00A44D84 /* PersonMarker.swift */; };
+		BB61A9822731E18700A44D84 /* DetailedPersonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61A9812731E18700A44D84 /* DetailedPersonMarker.swift */; };
+		BB61A9842731E44800A44D84 /* PersistenceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61A9832731E44800A44D84 /* PersistenceProvider.swift */; };
+		BB61A98B2739698500A44D84 /* FolioUserStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB61A9882739698500A44D84 /* FolioUserStorage.xcdatamodeld */; };
+		BB61A98F2739CFC000A44D84 /* Folio.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61A98E2739CFC000A44D84 /* Folio.swift */; };
+		BB61A991273A2B2100A44D84 /* FolioEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61A990273A2B2100A44D84 /* FolioEditView.swift */; };
+		BB61A994273D05D600A44D84 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61A993273D05D600A44D84 /* Navigation.swift */; };
+		BB61A996273D067000A44D84 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61A995273D067000A44D84 /* Color.swift */; };
+		BB61A998273DF0C000A44D84 /* AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61A997273DF0C000A44D84 /* AppStorage.swift */; };
+		BB61A99B273DFDC000A44D84 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61A99A273DFDC000A44D84 /* SettingsView.swift */; };
+		BB61A99E27406C7100A44D84 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = BB61A99D27406C7100A44D84 /* CachedAsyncImage */; };
+		BB61A9A0274072C700A44D84 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61A99F274072C700A44D84 /* Date.swift */; };
+		BB61A9A327407D7C00A44D84 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BB61A9A227407D7C00A44D84 /* ConfettiSwiftUI */; };
 		BB816889272C682D00582206 /* folioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB816888272C682D00582206 /* folioApp.swift */; };
 		BB81688B272C682D00582206 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB81688A272C682D00582206 /* ContentView.swift */; };
 		BB81688D272C682E00582206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB81688C272C682E00582206 /* Assets.xcassets */; };
@@ -17,11 +30,12 @@
 		BB81689A272C682E00582206 /* folioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB816899272C682E00582206 /* folioTests.swift */; };
 		BB8168A4272C682F00582206 /* folioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8168A3272C682F00582206 /* folioUITests.swift */; };
 		BB8168A6272C682F00582206 /* folioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8168A5272C682F00582206 /* folioUITestsLaunchTests.swift */; };
-		BB8380FB272CC149003A03CD /* Lato in Resources */ = {isa = PBXBuildFile; fileRef = BB8380FA272CC148003A03CD /* Lato */; };
-		BB8380FD272CC9FB003A03CD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8380FC272CC9FB003A03CD /* Person.swift */; };
+		BB8380FD272CC9FB003A03CD /* PeopleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8380FC272CC9FB003A03CD /* PeopleAPI.swift */; };
 		BB8380FF2730C6A3003A03CD /* FolioListCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8380FE2730C6A3003A03CD /* FolioListCard.swift */; };
 		BB8381012730C725003A03CD /* FolioDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8381002730C725003A03CD /* FolioDetailsView.swift */; };
 		BB8381032730C7D4003A03CD /* FolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8381022730C7D4003A03CD /* FolioView.swift */; };
+		BB838106273189C9003A03CD /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB838108273189C9003A03CD /* Lato-Light.ttf */; };
+		BB83810C27319930003A03CD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83810B27319930003A03CD /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +61,18 @@
 		5C02A13C93AF7C51606F1582 /* Pods-folio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-folio.debug.xcconfig"; path = "Target Support Files/Pods-folio/Pods-folio.debug.xcconfig"; sourceTree = "<group>"; };
 		BA3F8A0121680B6BE2F06FEA /* Pods-folio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-folio.release.xcconfig"; path = "Target Support Files/Pods-folio/Pods-folio.release.xcconfig"; sourceTree = "<group>"; };
 		BAB2474E04D0D840DDED8034 /* Pods_folio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_folio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB61A97F2731E17D00A44D84 /* PersonMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonMarker.swift; sourceTree = "<group>"; };
+		BB61A9812731E18700A44D84 /* DetailedPersonMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPersonMarker.swift; sourceTree = "<group>"; };
+		BB61A9832731E44800A44D84 /* PersistenceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceProvider.swift; sourceTree = "<group>"; };
+		BB61A9892739698500A44D84 /* FolioUserStorage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FolioUserStorage.xcdatamodel; sourceTree = "<group>"; };
+		BB61A98A2739698500A44D84 /* FolioUserStorageDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FolioUserStorageDataModel.xcdatamodel; sourceTree = "<group>"; };
+		BB61A98E2739CFC000A44D84 /* Folio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folio.swift; sourceTree = "<group>"; };
+		BB61A990273A2B2100A44D84 /* FolioEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioEditView.swift; sourceTree = "<group>"; };
+		BB61A993273D05D600A44D84 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		BB61A995273D067000A44D84 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		BB61A997273DF0C000A44D84 /* AppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorage.swift; sourceTree = "<group>"; };
+		BB61A99A273DFDC000A44D84 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BB61A99F274072C700A44D84 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		BB816885272C682D00582206 /* folio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = folio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB816888272C682D00582206 /* folioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = folioApp.swift; sourceTree = "<group>"; };
 		BB81688A272C682D00582206 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,11 +83,13 @@
 		BB81689F272C682F00582206 /* folioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = folioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB8168A3272C682F00582206 /* folioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = folioUITests.swift; sourceTree = "<group>"; };
 		BB8168A5272C682F00582206 /* folioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = folioUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		BB8380FA272CC148003A03CD /* Lato */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Lato; sourceTree = "<group>"; };
-		BB8380FC272CC9FB003A03CD /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		BB8380FC272CC9FB003A03CD /* PeopleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAPI.swift; sourceTree = "<group>"; };
 		BB8380FE2730C6A3003A03CD /* FolioListCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioListCard.swift; sourceTree = "<group>"; };
 		BB8381002730C725003A03CD /* FolioDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioDetailsView.swift; sourceTree = "<group>"; };
 		BB8381022730C7D4003A03CD /* FolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioView.swift; sourceTree = "<group>"; };
+		BB838107273189C9003A03CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = "Base.lproj/Lato-Light.ttf"; sourceTree = "<group>"; };
+		BB83810A27318A43003A03CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BB83810B27319930003A03CD /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		C7962DA789D4EC958ADC2022 /* Pods_folio_folioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_folio_folioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3DA562B7D141371B20CDAFC /* Pods-folio-folioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-folio-folioUITests.release.xcconfig"; path = "Target Support Files/Pods-folio-folioUITests/Pods-folio-folioUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D6E6CCB5AB7DF6D7D85E0D64 /* Pods-folioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-folioTests.debug.xcconfig"; path = "Target Support Files/Pods-folioTests/Pods-folioTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,7 +101,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB61A9A327407D7C00A44D84 /* ConfettiSwiftUI in Frameworks */,
 				85A60A5473E690BA26A55887 /* Pods_folio.framework in Frameworks */,
+				BB61A99E27406C7100A44D84 /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +136,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BB61A992273D05BC00A44D84 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BB61A993273D05D600A44D84 /* Navigation.swift */,
+				BB61A995273D067000A44D84 /* Color.swift */,
+				BB61A97F2731E17D00A44D84 /* PersonMarker.swift */,
+				BB61A9812731E18700A44D84 /* DetailedPersonMarker.swift */,
+				BB8380FE2730C6A3003A03CD /* FolioListCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BB61A999273DFDB300A44D84 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB81688A272C682D00582206 /* ContentView.swift */,
+				BB83810B27319930003A03CD /* MapView.swift */,
+				BB8381022730C7D4003A03CD /* FolioView.swift */,
+				BB8381002730C725003A03CD /* FolioDetailsView.swift */,
+				BB61A990273A2B2100A44D84 /* FolioEditView.swift */,
+				BB61A99A273DFDC000A44D84 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		BB81687C272C682D00582206 = {
 			isa = PBXGroup;
 			children = (
@@ -131,14 +186,14 @@
 		BB816887272C682D00582206 /* folio */ = {
 			isa = PBXGroup;
 			children = (
+				BB880BC22740B292000FE7CB /* Extensions */,
+				BB816888272C682D00582206 /* folioApp.swift */,
+				BB61A999273DFDB300A44D84 /* Views */,
+				BB61A992273D05BC00A44D84 /* Components */,
+				BB83810A27318A43003A03CD /* Info.plist */,
 				BB8380F8272CC01B003A03CD /* Fonts */,
 				BB8380F7272CBD86003A03CD /* Storage */,
 				BB8168B2272C90F100582206 /* API */,
-				BB816888272C682D00582206 /* folioApp.swift */,
-				BB81688A272C682D00582206 /* ContentView.swift */,
-				BB8381022730C7D4003A03CD /* FolioView.swift */,
-				BB8381002730C725003A03CD /* FolioDetailsView.swift */,
-				BB8380FE2730C6A3003A03CD /* FolioListCard.swift */,
 				BB81688C272C682E00582206 /* Assets.xcassets */,
 				BB81688E272C682E00582206 /* Preview Content */,
 			);
@@ -173,7 +228,7 @@
 		BB8168B2272C90F100582206 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				BB8380FC272CC9FB003A03CD /* Person.swift */,
+				BB8380FC272CC9FB003A03CD /* PeopleAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -181,6 +236,10 @@
 		BB8380F7272CBD86003A03CD /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				BB61A9832731E44800A44D84 /* PersistenceProvider.swift */,
+				BB61A9882739698500A44D84 /* FolioUserStorage.xcdatamodeld */,
+				BB61A98E2739CFC000A44D84 /* Folio.swift */,
+				BB61A997273DF0C000A44D84 /* AppStorage.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -188,9 +247,17 @@
 		BB8380F8272CC01B003A03CD /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				BB8380FA272CC148003A03CD /* Lato */,
+				BB838108273189C9003A03CD /* Lato-Light.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		BB880BC22740B292000FE7CB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB61A99F274072C700A44D84 /* Date.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D86D88A68E36E4306D89813E /* Pods */ = {
@@ -224,6 +291,10 @@
 			dependencies = (
 			);
 			name = folio;
+			packageProductDependencies = (
+				BB61A99D27406C7100A44D84 /* CachedAsyncImage */,
+				BB61A9A227407D7C00A44D84 /* ConfettiSwiftUI */,
+			);
 			productName = folio;
 			productReference = BB816885272C682D00582206 /* folio.app */;
 			productType = "com.apple.product-type.application";
@@ -302,6 +373,10 @@
 				Base,
 			);
 			mainGroup = BB81687C272C682D00582206;
+			packageReferences = (
+				BB61A99C27406C7100A44D84 /* XCRemoteSwiftPackageReference "SwiftUI-CachedAsyncImage" */,
+				BB61A9A127407D7C00A44D84 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+			);
 			productRefGroup = BB816886272C682D00582206 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -318,9 +393,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB838106273189C9003A03CD /* Lato-Light.ttf in Resources */,
 				BB816890272C682E00582206 /* Preview Assets.xcassets in Resources */,
 				BB81688D272C682E00582206 /* Assets.xcassets in Resources */,
-				BB8380FB272CC149003A03CD /* Lato in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,11 +523,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB8380FD272CC9FB003A03CD /* Person.swift in Sources */,
+				BB83810C27319930003A03CD /* MapView.swift in Sources */,
+				BB61A998273DF0C000A44D84 /* AppStorage.swift in Sources */,
+				BB61A98B2739698500A44D84 /* FolioUserStorage.xcdatamodeld in Sources */,
+				BB8380FD272CC9FB003A03CD /* PeopleAPI.swift in Sources */,
 				BB8380FF2730C6A3003A03CD /* FolioListCard.swift in Sources */,
+				BB61A99B273DFDC000A44D84 /* SettingsView.swift in Sources */,
 				BB81688B272C682D00582206 /* ContentView.swift in Sources */,
+				BB61A9A0274072C700A44D84 /* Date.swift in Sources */,
 				BB8381012730C725003A03CD /* FolioDetailsView.swift in Sources */,
+				BB61A9822731E18700A44D84 /* DetailedPersonMarker.swift in Sources */,
+				BB61A994273D05D600A44D84 /* Navigation.swift in Sources */,
+				BB61A996273D067000A44D84 /* Color.swift in Sources */,
+				BB61A991273A2B2100A44D84 /* FolioEditView.swift in Sources */,
 				BB8381032730C7D4003A03CD /* FolioView.swift in Sources */,
+				BB61A98F2739CFC000A44D84 /* Folio.swift in Sources */,
+				BB61A9802731E17D00A44D84 /* PersonMarker.swift in Sources */,
+				BB61A9842731E44800A44D84 /* PersistenceProvider.swift in Sources */,
 				BB816889272C682D00582206 /* folioApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +575,17 @@
 			targetProxy = BB8168A0272C682F00582206 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB838108273189C9003A03CD /* Lato-Light.ttf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB838107273189C9003A03CD /* Base */,
+			);
+			name = "Lato-Light.ttf";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BB8168A7272C682F00582206 /* Debug */ = {
@@ -619,6 +717,7 @@
 				DEVELOPMENT_TEAM = 3TQXUZH6WN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = folio/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -651,6 +750,7 @@
 				DEVELOPMENT_TEAM = 3TQXUZH6WN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = folio/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -806,6 +906,52 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BB61A99C27406C7100A44D84 /* XCRemoteSwiftPackageReference "SwiftUI-CachedAsyncImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/SwiftUI-CachedAsyncImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		BB61A9A127407D7C00A44D84 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BB61A99D27406C7100A44D84 /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB61A99C27406C7100A44D84 /* XCRemoteSwiftPackageReference "SwiftUI-CachedAsyncImage" */;
+			productName = CachedAsyncImage;
+		};
+		BB61A9A227407D7C00A44D84 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB61A9A127407D7C00A44D84 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		BB61A9882739698500A44D84 /* FolioUserStorage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BB61A9892739698500A44D84 /* FolioUserStorage.xcdatamodel */,
+				BB61A98A2739698500A44D84 /* FolioUserStorageDataModel.xcdatamodel */,
+			);
+			currentVersion = BB61A9892739698500A44D84 /* FolioUserStorage.xcdatamodel */;
+			path = FolioUserStorage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BB81687D272C682D00582206 /* Project object */;
 }
