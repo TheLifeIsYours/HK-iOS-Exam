@@ -13,7 +13,12 @@ struct SettingsView: View {
     @FetchRequest(entity: Folio.entity(), sortDescriptors: []) var folios: FetchedResults<Folio>
     @FetchRequest(entity: AppStorage.entity(), sortDescriptors: []) var appStorages: FetchedResults<AppStorage>
     
+    enum Fields: Hashable {
+        case seedField
+    }
+    
     @State var seed = "ios"
+    @FocusState var focusedField: Fields?
     
     var body: some View {
         ZStack {
@@ -25,6 +30,8 @@ struct SettingsView: View {
                 
                 ScrollView {
                     TextInputCard(label: "API Seed: ", placeholder: "seed", text: $seed)
+                        .focused($focusedField, equals: .seedField)
+                    
                     ButtonAlertAction(
                         label: "Clear Storage",
                         icon: "externaldrive.badge.xmark",
@@ -66,6 +73,9 @@ struct SettingsView: View {
                     .padding([.horizontal, .bottom])
                 
             }.padding([.horizontal])
+                .onTapGesture {
+                    focusedField = nil
+                }
             .onAppear {
                 if appStorages.isEmpty {
                     let _ = AppStorage(context: moc)

@@ -12,6 +12,17 @@ struct FolioEditView: View {
     @Environment(\.dismiss) var dismiss
     @Environment(\.managedObjectContext) var moc
     
+    enum Fields: Hashable {
+        case firstNameField
+        case lastNameField
+        case phoneField
+        case emailField
+        case cityField
+        case stateField
+    }
+    
+    @FocusState var focusedField: Fields?
+    
     @State var folio: Folio
     
     @State var firstName: String
@@ -63,9 +74,11 @@ struct FolioEditView: View {
                 
                     TextField("First name", text: $firstName)
                         .textFieldStyling(roundedCornes: 3, color: .indigo, opacity: 0.4)
+                        .focused($focusedField, equals: .firstNameField)
                     
                     TextField("Last name", text: $lastName)
                         .textFieldStyling(roundedCornes: 3, color: .indigo, opacity: 0.4)
+                        .focused($focusedField, equals: .lastNameField)
                     
                     Spacer()
                 }.padding(.top)
@@ -74,6 +87,7 @@ struct FolioEditView: View {
                     Image(systemName: "phone").scaleEffect(1.25)
                     TextField("Phone number", text: $phone)
                         .textFieldStyling(roundedCornes: 3, color: .indigo, opacity: 0.4)
+                        .focused($focusedField, equals: .phoneField)
                         .keyboardType(.phonePad)
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }.padding(.top)
@@ -82,6 +96,7 @@ struct FolioEditView: View {
                     Image(systemName: "envelope").scaleEffect(1.25)
                     TextField("Email", text: $email)
                         .textFieldStyling(roundedCornes: 3, color: .indigo, opacity: 0.4)
+                        .focused($focusedField, equals: .emailField)
                         .keyboardType(.emailAddress)
                     Spacer()
                 }.padding(.top)
@@ -90,9 +105,11 @@ struct FolioEditView: View {
                     Image(systemName: "map").scaleEffect(1.25)
                     TextField("City", text: $city)
                         .textFieldStyling(roundedCornes: 3, color: .indigo, opacity: 0.4)
+                        .focused($focusedField, equals: .cityField)
                     
                     TextField("State", text: $state)
                         .textFieldStyling(roundedCornes: 3, color: .indigo, opacity: 0.4)
+                        .focused($focusedField, equals: .stateField)
                     
                     Spacer()
                     
@@ -180,6 +197,9 @@ struct FolioEditView: View {
             .cornerRadius(10)
             .padding()
             .foregroundColor(.white)
+            .onTapGesture {
+                focusedField = nil
+            }
         }
         .navigationTitle("Editing")
     }
