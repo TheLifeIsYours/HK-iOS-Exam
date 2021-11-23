@@ -14,23 +14,23 @@ Fordi jeg brukte SwiftUI og ikke Story Boards ble det at jeg laget min egen vers
 ## Eksterne Biblioteker
 
 ### Pods:
-- Alamofire
-- ObjectMapper
-- SwiftyJSON
+- [Alamofire](https://github.com/Alamofire/Alamofire)
+- [ObjectMapper](https://github.com/tristanhimmelman/ObjectMapper)
+- [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
 
 ### Packages:
-- CachedAsyncImage
+- [CachedAsyncImage](https://github.com/lorenzofiamingo/SwiftUI-CachedAsyncImage)
 
 ## Inspirert Kode
 
-Date Extension: By Leo Dabus
+Date Extension: By Leo Dabus </br>
 https://stackoverflow.com/a/43664156/2359829
 
-Navigation Button Component: By arsenius
+Navigation Button Component: By arsenius </br>
 https://stackoverflow.com/a/58908409/2359829
 
-Custom NavigationView Bar Styles:
-https://medium.com/swlh/custom-navigationview-bar-in-swiftui-4b782eb68e94
+Custom NavigationView Bar Styles: </br>
+https://medium.com/swlh/custom-navigationview-bar-in-swiftui-4b782eb68e94 </br>
 https://gist.github.com/apatronl/29b6c82085afd1c6177715d88411aaf4
 
 ## Kjente Bugs
