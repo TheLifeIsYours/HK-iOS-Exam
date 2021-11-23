@@ -60,22 +60,28 @@ struct FolioEditView: View {
                 
                 HStack {
                     Image(systemName: "person").scaleEffect(1.25)
+                
                     TextField("First name", text: $firstName)
+                        .textFieldStyling(roundedCornes: 3, color: .indigo, opacity: 0.4)
+                    
                     TextField("Last name", text: $lastName)
+                        .textFieldStyling(roundedCornes: 3, color: .indigo, opacity: 0.4)
+                    
                     Spacer()
                 }.padding(.top)
                 
                 HStack {
                     Image(systemName: "phone").scaleEffect(1.25)
                     TextField("Phone number", text: $phone)
+                        .textFieldStyling(roundedCornes: 3, color: .indigo, opacity: 0.4)
                         .keyboardType(.phonePad)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .textFieldStyle(DefaultTextFieldStyle())
                 }.padding(.top)
                 
                 HStack {
                     Image(systemName: "envelope").scaleEffect(1.25)
                     TextField("Email", text: $email)
+                        .textFieldStyling(roundedCornes: 3, color: .indigo, opacity: 0.4)
                         .keyboardType(.emailAddress)
                     Spacer()
                 }.padding(.top)
@@ -83,7 +89,11 @@ struct FolioEditView: View {
                 HStack {
                     Image(systemName: "map").scaleEffect(1.25)
                     TextField("City", text: $city)
+                        .textFieldStyling(roundedCornes: 3, color: .indigo, opacity: 0.4)
+                    
                     TextField("State", text: $state)
+                        .textFieldStyling(roundedCornes: 3, color: .indigo, opacity: 0.4)
+                    
                     Spacer()
                     
                     Image(systemName: "location.magnifyingglass").opacity(0.6)

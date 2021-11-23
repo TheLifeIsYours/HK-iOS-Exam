@@ -9,7 +9,6 @@ target 'folio' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'ObjectMapper'
-  pod 'AlamofireObjectMapper'
 
   target 'folioTests' do
     inherit! :search_paths

@@ -9,9 +9,21 @@ import SwiftUI
 
 @main
 struct folioApp: App {
+    @State var viewSplash: Bool = true
+    
     var body: some Scene {
         WindowGroup {
-            ContentView().environment(\.managedObjectContext, PersistenceProvider.default.context)
+            Group {
+                if viewSplash {
+                    SplashView()
+                } else {
+                    ContentView().environment(\.managedObjectContext, PersistenceProvider.default.context)
+                }
+            }.onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+                    viewSplash = false
+                }
+            }
         }
     }
 }

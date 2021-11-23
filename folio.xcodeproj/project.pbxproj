@@ -10,6 +10,10 @@
 		3F28A745225E0F75A2DC70CA /* Pods_folioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28915F53D279375EA34F39F5 /* Pods_folioTests.framework */; };
 		7964A49CB1F4ACF4E707710E /* Pods_folio_folioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7962DA789D4EC958ADC2022 /* Pods_folio_folioUITests.framework */; };
 		85A60A5473E690BA26A55887 /* Pods_folio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB2474E04D0D840DDED8034 /* Pods_folio.framework */; };
+		BB363CDD274D390C009652F7 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB363CDC274D390C009652F7 /* UIScreen.swift */; };
+		BB363CDF274D3B9F009652F7 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB363CDE274D3B9F009652F7 /* SplashView.swift */; };
+		BB363CE1274D8391009652F7 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB363CE0274D8391009652F7 /* TextField.swift */; };
+		BB363CE3274D8F39009652F7 /* ButtonAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB363CE2274D8F39009652F7 /* ButtonAlert.swift */; };
 		BB61A9802731E17D00A44D84 /* PersonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61A97F2731E17D00A44D84 /* PersonMarker.swift */; };
 		BB61A9822731E18700A44D84 /* DetailedPersonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61A9812731E18700A44D84 /* DetailedPersonMarker.swift */; };
 		BB61A9842731E44800A44D84 /* PersistenceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61A9832731E44800A44D84 /* PersistenceProvider.swift */; };
@@ -22,7 +26,6 @@
 		BB61A99B273DFDC000A44D84 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61A99A273DFDC000A44D84 /* SettingsView.swift */; };
 		BB61A99E27406C7100A44D84 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = BB61A99D27406C7100A44D84 /* CachedAsyncImage */; };
 		BB61A9A0274072C700A44D84 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB61A99F274072C700A44D84 /* Date.swift */; };
-		BB61A9A327407D7C00A44D84 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BB61A9A227407D7C00A44D84 /* ConfettiSwiftUI */; };
 		BB816889272C682D00582206 /* folioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB816888272C682D00582206 /* folioApp.swift */; };
 		BB81688B272C682D00582206 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB81688A272C682D00582206 /* ContentView.swift */; };
 		BB81688D272C682E00582206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB81688C272C682E00582206 /* Assets.xcassets */; };
@@ -61,6 +64,10 @@
 		5C02A13C93AF7C51606F1582 /* Pods-folio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-folio.debug.xcconfig"; path = "Target Support Files/Pods-folio/Pods-folio.debug.xcconfig"; sourceTree = "<group>"; };
 		BA3F8A0121680B6BE2F06FEA /* Pods-folio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-folio.release.xcconfig"; path = "Target Support Files/Pods-folio/Pods-folio.release.xcconfig"; sourceTree = "<group>"; };
 		BAB2474E04D0D840DDED8034 /* Pods_folio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_folio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB363CDC274D390C009652F7 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
+		BB363CDE274D3B9F009652F7 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		BB363CE0274D8391009652F7 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		BB363CE2274D8F39009652F7 /* ButtonAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAlert.swift; sourceTree = "<group>"; };
 		BB61A97F2731E17D00A44D84 /* PersonMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonMarker.swift; sourceTree = "<group>"; };
 		BB61A9812731E18700A44D84 /* DetailedPersonMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPersonMarker.swift; sourceTree = "<group>"; };
 		BB61A9832731E44800A44D84 /* PersistenceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceProvider.swift; sourceTree = "<group>"; };
@@ -101,7 +108,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB61A9A327407D7C00A44D84 /* ConfettiSwiftUI in Frameworks */,
 				85A60A5473E690BA26A55887 /* Pods_folio.framework in Frameworks */,
 				BB61A99E27406C7100A44D84 /* CachedAsyncImage in Frameworks */,
 			);
@@ -144,6 +150,7 @@
 				BB61A97F2731E17D00A44D84 /* PersonMarker.swift */,
 				BB61A9812731E18700A44D84 /* DetailedPersonMarker.swift */,
 				BB8380FE2730C6A3003A03CD /* FolioListCard.swift */,
+				BB363CE2274D8F39009652F7 /* ButtonAlert.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -157,6 +164,7 @@
 				BB8381002730C725003A03CD /* FolioDetailsView.swift */,
 				BB61A990273A2B2100A44D84 /* FolioEditView.swift */,
 				BB61A99A273DFDC000A44D84 /* SettingsView.swift */,
+				BB363CDE274D3B9F009652F7 /* SplashView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,6 +264,8 @@
 			isa = PBXGroup;
 			children = (
 				BB61A99F274072C700A44D84 /* Date.swift */,
+				BB363CDC274D390C009652F7 /* UIScreen.swift */,
+				BB363CE0274D8391009652F7 /* TextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -293,7 +303,6 @@
 			name = folio;
 			packageProductDependencies = (
 				BB61A99D27406C7100A44D84 /* CachedAsyncImage */,
-				BB61A9A227407D7C00A44D84 /* ConfettiSwiftUI */,
 			);
 			productName = folio;
 			productReference = BB816885272C682D00582206 /* folio.app */;
@@ -375,7 +384,6 @@
 			mainGroup = BB81687C272C682D00582206;
 			packageReferences = (
 				BB61A99C27406C7100A44D84 /* XCRemoteSwiftPackageReference "SwiftUI-CachedAsyncImage" */,
-				BB61A9A127407D7C00A44D84 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
 			);
 			productRefGroup = BB816886272C682D00582206 /* Products */;
 			projectDirPath = "";
@@ -526,7 +534,9 @@
 				BB83810C27319930003A03CD /* MapView.swift in Sources */,
 				BB61A998273DF0C000A44D84 /* AppStorage.swift in Sources */,
 				BB61A98B2739698500A44D84 /* FolioUserStorage.xcdatamodeld in Sources */,
+				BB363CE1274D8391009652F7 /* TextField.swift in Sources */,
 				BB8380FD272CC9FB003A03CD /* PeopleAPI.swift in Sources */,
+				BB363CDD274D390C009652F7 /* UIScreen.swift in Sources */,
 				BB8380FF2730C6A3003A03CD /* FolioListCard.swift in Sources */,
 				BB61A99B273DFDC000A44D84 /* SettingsView.swift in Sources */,
 				BB81688B272C682D00582206 /* ContentView.swift in Sources */,
@@ -539,7 +549,9 @@
 				BB8381032730C7D4003A03CD /* FolioView.swift in Sources */,
 				BB61A98F2739CFC000A44D84 /* Folio.swift in Sources */,
 				BB61A9802731E17D00A44D84 /* PersonMarker.swift in Sources */,
+				BB363CDF274D3B9F009652F7 /* SplashView.swift in Sources */,
 				BB61A9842731E44800A44D84 /* PersistenceProvider.swift in Sources */,
+				BB363CE3274D8F39009652F7 /* ButtonAlert.swift in Sources */,
 				BB816889272C682D00582206 /* folioApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -916,14 +928,6 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		BB61A9A127407D7C00A44D84 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -931,11 +935,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BB61A99C27406C7100A44D84 /* XCRemoteSwiftPackageReference "SwiftUI-CachedAsyncImage" */;
 			productName = CachedAsyncImage;
-		};
-		BB61A9A227407D7C00A44D84 /* ConfettiSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BB61A9A127407D7C00A44D84 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
-			productName = ConfettiSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 

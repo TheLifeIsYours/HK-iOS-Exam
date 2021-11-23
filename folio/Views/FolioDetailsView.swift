@@ -10,8 +10,7 @@ import CachedAsyncImage
 
 struct FolioDetailsView: View {
     @Environment(\.managedObjectContext) var moc
-    var folioRequest: FetchRequest<Folio>
-    
+    var folioRequest: FetchRequest<Folio>   
     
     @State var playState = false
     @State var counter = 0
@@ -50,7 +49,9 @@ struct FolioDetailsView: View {
                                     .padding()
                                     .background(Blur(style: .systemUltraThinMaterial))
                                     .cornerRadius(10)
-                            })
+                            }).onAppear {
+                                counter += 1
+                            }
                         }
                     }
                     
@@ -156,7 +157,9 @@ struct Confetti: View {
                     }
                 }.onAppear {
                     DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
-                        doneAnimationCount += 1
+                        if(doneAnimationCount < animationCount ) {
+                            doneAnimationCount += 1
+                        }
                     }
                 }
             }
@@ -196,10 +199,4 @@ struct Particle: View {
                 }
             }
     }
-}
-
-extension UIScreen{
-   static let width = UIScreen.main.bounds.size.width
-   static let height = UIScreen.main.bounds.size.height
-   static let size = UIScreen.main.bounds.size
 }

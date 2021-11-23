@@ -47,8 +47,6 @@ final class PersistenceProvider {
                 fatalError("Failed loading persistent stores with error: \(error.localizedDescription)")
             }
         }
-        
-//        clearPersistentStore()
     }
     
     func clearPersistentStore() {
@@ -66,17 +64,16 @@ final class PersistenceProvider {
             debugPrint(error)
         }
 
-        // Re-create the persistent container
         persistentContainer = NSPersistentContainer(
-            name: "FolioUserStorage" // the name of
-            // a .xcdatamodeld file
+            name: "FolioUserStorage"
         )
 
-        // Calling loadPersistentStores will re-create the
-        // persistent stores
-        persistentContainer.loadPersistentStores {
-            (store, error) in
-            // Handle errors
+        persistentContainer.loadPersistentStores { (store, error) in
+            debugPrint(store)
+            
+            if let error = error {
+                fatalError("Failed clear persistent stores with error: \(error.localizedDescription)")
+            }
         }
     }
 }

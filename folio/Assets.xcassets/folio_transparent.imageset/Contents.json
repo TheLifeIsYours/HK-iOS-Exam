@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "folio_transparent.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

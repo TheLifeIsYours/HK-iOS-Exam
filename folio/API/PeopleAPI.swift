@@ -7,10 +7,7 @@
 
 import Foundation
 import Alamofire
-import AlamofireObjectMapper
-
 import SwiftyJSON
-
 import ObjectMapper
 import CoreData
 

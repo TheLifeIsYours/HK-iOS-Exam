@@ -30,7 +30,7 @@ struct FolioView: View {
                             VStack {
                                 Text("Saved Folios")
                                     .padding()
-                                    .frame(maxWidth: .infinity)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
                                     .background(Blur(style: .systemUltraThinMaterial))
                                     .cornerRadius(4)
                                     .padding([.horizontal, .top])
@@ -54,7 +54,7 @@ struct FolioView: View {
                                 }
                             }
                             .padding()
-                            .frame(maxWidth: .infinity)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                             .background(Blur(style: .systemUltraThinMaterial))
                             .cornerRadius(4)
                             .padding([.horizontal, .top])

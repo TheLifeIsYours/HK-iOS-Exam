@@ -44,6 +44,7 @@ struct DetailedPersonMarker: View {
             .fixedSize()
         }
         .font(.system(size: 10))
+        .foregroundColor(.accentColor)
         .cornerRadius(10)
         .overlay(
             RoundedRectangle(cornerRadius: 10)
