@@ -14,9 +14,12 @@ Fordi jeg brukte SwiftUI og ikke Story Boards ble det at jeg laget min egen vers
 ## Eksterne Biblioteker
 
 ### Pods:
-- [Alamofire](https://github.com/Alamofire/Alamofire)
-- [ObjectMapper](https://github.com/tristanhimmelman/ObjectMapper)
-- [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
+
+Pods må installeres med disse versjonene
+
+- [Alamofire (= 5.0.0-rc.2)](https://github.com/Alamofire/Alamofire)
+- [ObjectMapper (~> 3.5.1)](https://github.com/tristanhimmelman/ObjectMapper)
+- [SwiftyJSON (5.0.1)](https://github.com/SwiftyJSON/SwiftyJSON)
 
 ### Packages:
 - [CachedAsyncImage](https://github.com/lorenzofiamingo/SwiftUI-CachedAsyncImage)
